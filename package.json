@@ -1,0 +1,9 @@
+{
+    "name": "eyex-local",
+    "private": true,
+    "dependencies": {
+        "gulp": "*",
+        "gulp-concat": "*",
+        "gulp-uglify": "*"
+    }
+}

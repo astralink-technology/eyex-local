@@ -1,4 +1,3 @@
-
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -44,7 +43,9 @@
 
 <!--Gulped-->
 <script type="text/javascript" src="/eyex-local/public/js/compiled/eyex-local-production.min.js"></script>
+<script type="text/javascript" src="/eyex-local/public/js/pusher.min.js"></script>
 
+<!--pusher-->
 
 <link href="/eyex-local/public/css/compiled/site-eyex.css" rel="stylesheet" />
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -62,5 +63,6 @@
 
 <!--global variables-->
 <script type="text/javascript">
-
+    var _pusher = new Pusher('8a7c33f8bae0cc471cac');
+    var _channel = _pusher.subscribe('90a78301d00d');
 </script>
