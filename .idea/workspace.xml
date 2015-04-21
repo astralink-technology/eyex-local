@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="57a2ae2d-5e44-48fa-bcc9-559bf09e04ce" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/3.2.0/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/3.2.0/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/3.2.0/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/UTCconvertor_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/scss/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/scss/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/scss/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/scss/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/scss/_spinning.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/scss/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/accountSettingsController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/activitiesController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/angular-route.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/angular-scroll.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/announcementsController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/authentication_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/authorization_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/3.2.0/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/3.2.0/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/3.2.0/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/3.2.0/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/3.2.0/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/3.2.0/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/3.2.0/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/canvas-tools.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/canvas-tools.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/cardAccessController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/changePasswordController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/changePinController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/cloudAccessibilityController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/companyAccountController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/companyController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/companyPasswordController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/completeInvitationController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/conn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/countryServices.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-node-db/Tables/create_entity_table.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/csv_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/curl_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/themes/dark-blue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/themes/dark-green.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/themes/dark-unica.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/data.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/data_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/databaseAdapter_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/dateTimeServices.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/device_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/devicesController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/doorAccessController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/drilldown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/drilldown.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/editCompanyProfileController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/editProfileController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/employeesController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/encryption_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/exporting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/exporting.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/extension_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/extensionsController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/compiled/eyex-lite-production.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/eyex-local.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/eyexServices.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/eyex_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/funnel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/funnel.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/galleryController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generateAsteriskConfig.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/3.2.0/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/themes/gray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/themes/grid-light.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/themes/grid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layout/headers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/heatmap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/heatmap.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/highcharts-3d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/highcharts-3d.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/highcharts-all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/highcharts-more.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/highcharts-more.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/highcharts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/highcharts.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/idgenerator_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/indexController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/ini_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/ivrsController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery-1.9.1/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jslinq.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/jwt_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/loadServices.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/log_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/mailSender_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layout/master.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/moment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/no-data-to-display.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/no-data-to-display.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/offline-0-7-11.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/pageServices.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/paramsServices.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/personalExtensionController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/pgdatabase_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/productRegistration_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/profileController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/resData_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/themes/sand-signika.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/session_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/setupController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/sipSettingsController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/themes/skies.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/socket_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/solid-gauge.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/modules/solid-gauge.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/less/spinning.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/sqlconnection_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/adapters/standalone-framework.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/highcharts-4.0.4/js/adapters/standalone-framework.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/statisticsServices.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/stringServices.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/sync_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/ui-bootstrap-tpls-0.10.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/helpers/user_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/validationServices.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/font-awesome/4.2.0/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/version.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/webConfig.php" />
+    </list>
+    <ignored path="eyex-local.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="eyex-local" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="version.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/version.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_entity_table.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eyex-node-db/Tables/create_entity_table.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="135">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="csv_helper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helpers/csv_helper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="315">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conn.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/conn.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="645">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.03468208" vertical-offset="0" max-vertical-offset="865">
+              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="headers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layout/headers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="195">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="master.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layout/master.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="1065">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <marker date="1429609884000" expanded="true" signature="2388:2482" placeholder="..." />
+                <marker date="1429609884000" expanded="true" signature="2416:2474" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/layout/master.php" />
+        <option value="$PROJECT_DIR$/layout/headers.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="197" />
+    <option name="y" value="23" />
+    <option name="width" value="1926" />
+    <option name="height" value="986" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eyex-local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eyex-local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eyex-local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eyex-local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eyex-local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eyex-local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eyex-local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57a2ae2d-5e44-48fa-bcc9-559bf09e04ce" name="Default" comment="" />
+      <created>1429607660977</created>
+      <option name="number" value="Default" />
+      <updated>1429607660977</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="197" y="23" width="1926" height="986" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18691589" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/version.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="889">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eyex-node-db/Tables/create_entity_table.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="889">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/csv_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="889">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/conn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="645">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/master.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="1065">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <marker date="1429609884000" expanded="true" signature="2388:2482" placeholder="..." />
+            <marker date="1429609884000" expanded="true" signature="2416:2474" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/headers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="195">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03468208" vertical-offset="0" max-vertical-offset="865">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
