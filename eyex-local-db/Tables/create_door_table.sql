@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS door (
+  _id VARCHAR(128) NOT NULL PRIMARY KEY
+  , door_name VARCHAR(128)
+  , door_node INTEGER
+);

@@ -8,16 +8,12 @@
 /*
  *  A helper to update employee status via door activity
  */
-require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/helpers/sqlconnection_helper.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/helpers/ini_helper.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/helpers/UTCconvertor_helper.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/helpers/curl_helper.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/config/webConfig.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/model/accessDao.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/model/deviceDao.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/model/doorRelationshipDao.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/model/userDao.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/lib/generateAsteriskConfig.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/helpers/sqlconnection_helper.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/helpers/ini_helper.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/helpers/UTCconvertor_helper.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/helpers/curl_helper.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/config/webConfig.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/lib/generateAsteriskConfig.php';
 
 class cp_eyex_helper{
     public function internetConnectivityCheck($webAddress, $port){
@@ -228,14 +224,14 @@ class cp_eyex_helper{
         if ((int)$resArrayForAccount[0]->company_count < 1){
             $notcomplete = 'company';
             if ($redirect == true){
-                header('Location: /eyex-lite/setup.php?step=company');
+                header('Location: /eyex-local/setup.php?step=company');
             }else{
                 return $notcomplete;
             }
         }else if ((int)$resArrayForDeviceType[0]->device_count < 1){
             $notcomplete = 'visitor-station';
             if ($redirect == true){
-                header( 'Location: /eyex-lite/setup.php?step=visitor-station');
+                header( 'Location: /eyex-local/setup.php?step=visitor-station');
             }else{
                 return $notcomplete;
             }
@@ -321,19 +317,19 @@ class cp_eyex_helper{
 
     public function dbUpgrade(){
         error_reporting(0);
-        $upgradeVersion = 3.21;
+        $upgradeVersion = 1.0;
 
         $webConfig = new webconfig();
         $webConfigObj = $webConfig->webconfig();
         $production = $webConfigObj->production;
 
         $iniHelper = new cp_ini_helper();
-        $dir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/config/version.ini';
+        $dir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/config/version.ini';
         if ($production == true){
             $dir = $_SERVER['DOCUMENT_ROOT'] . '/data/version.ini';
             if (!file_exists($dir)) {
                 $versioniniFile = fopen($dir, "w");
-                $dbVersionText = "db_version = 3.1";
+                $dbVersionText = "db_version = 1.0";
                 fwrite($versioniniFile, $dbVersionText);
                 fclose($versioniniFile);
             }
@@ -345,14 +341,14 @@ class cp_eyex_helper{
         if ($currentVersion < $upgradeVersion){
             $dbHelper = new cp_sqlConnection_helper();
 
-            $addAlterDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/eyex-lite-db/Alters/Add/';
-            $modifyAlterDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/eyex-lite-db/Alters/Modify/';
-            $dropAlterDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/eyex-lite-db/Alters/Drop/';
-            $createTableDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/eyex-lite-db/Tables/';
-            $spReadDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/eyex-lite-db/SP/Read/';
-            $spUpdateDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/eyex-lite-db/SP/Update/';
-            $spDeleteDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/eyex-lite-db/SP/Delete/';
-            $spCreateDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/eyex-lite-db/SP/Create/';
+            $addAlterDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/eyex-local-db/Alters/Add/';
+            $modifyAlterDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/eyex-local-db/Alters/Modify/';
+            $dropAlterDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/eyex-local-db/Alters/Drop/';
+            $createTableDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/eyex-local-db/Tables/';
+            $spReadDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/eyex-local-db/SP/Read/';
+            $spUpdateDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/eyex-local-db/SP/Update/';
+            $spDeleteDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/eyex-local-db/SP/Delete/';
+            $spCreateDir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/eyex-local-db/SP/Create/';
 
             $addAlterFiles = null;
             $modifyAlterFiles = null;

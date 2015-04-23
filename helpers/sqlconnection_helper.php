@@ -8,24 +8,19 @@
 /*
  *  A helper to connect you to the database
  */
-require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-lite/config/webConfig.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/config/webConfig.php';
 
 class cp_sqlConnection_helper{
 
-    private $prodHost = "192.168.1.86";
-    private $prodUser = "cety";
-    private $prodPassword = "astralink";
-    private $prodDb = "VS";
+    private $prodHost = "localhost";
+    private $prodDb = "eyex";
+    private $prodUser = "root";
+    private $prodPassword = "admin";
 
-//    private $host = "192.168.1.86";
-//    private $db = "VS";
-//    private $user = "cety";
-//    private $password = "astralink";
-
-    private $host = "192.168.1.86";
-    private $user = "cety";
-    private $db = "VS";
-    private $password = "astralink";
+    private $host = "localhost";
+    private $db = "eyex";
+    private $user = "root";
+    private $password = "admin";
 
     protected $connectionString = NULL;
 

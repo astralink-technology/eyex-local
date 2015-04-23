@@ -7,6 +7,13 @@ angular.module('eyexApp.landingController', []).
         , function ($scope, $http, validationServices) {
 
             var pusherLogs = new Array();
+            var log = new Object();
+
+            var initializePusherClient = function(){
+                log.message = 'Initializing pusher log';
+                pusherLogs.push(log);
+                $scope.pusherLogs = pusherLogs;
+            }
 
             _channel.bind('eyex_sync', function(data) {
                 $scope.$apply(function(){
@@ -16,5 +23,7 @@ angular.module('eyexApp.landingController', []).
                     $scope.pusherLogs = pusherLogs;
                 })
             });
+
+            initializePusherClient();
 
         }]);
