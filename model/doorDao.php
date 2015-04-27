@@ -18,8 +18,8 @@ class doorDao{
         $pDoorNode = 'null';
 
         if ($doorId != null) $pDoorId = $dataHelper->convertDataString($doorId);
-        if ($doorName != null) $pDoorName = $dataHelper->convertDataInt($doorName);
-        if ($doorNode != null) $pDoorNode = $dataHelper->convertDataString($doorNode);
+        if ($doorName != null) $pDoorName = $dataHelper->convertDataString($doorName);
+        if ($doorNode != null) $pDoorNode = $dataHelper->convertDataInt($doorNode);
 
         $sql = "CALL add_door(" .
             $pDoorId .
@@ -120,10 +120,12 @@ class doorDao{
         $pDoorId = 'null';
         $pDoorName = 'null';
         $pDoorNode = 'null';
+        $pPageSize = 'null';
+        $pSkipSize = 'null';
 
         if ($doorId != null) $pDoorId = $dataHelper->convertDataString($doorId);
-        if ($doorName != null) $pDoorName = $dataHelper->convertDataInt($doorName);
-        if ($doorNode != null) $pDoorNode = $dataHelper->convertDataString($doorNode);
+        if ($doorName != null) $pDoorName = $dataHelper->convertDataString($doorName);
+        if ($doorNode != null) $pDoorNode = $dataHelper->convertDataInt($doorNode);
         if ($pageSize != null) $pPageSize = $dataHelper->convertDataInt($pageSize);
         if ($skipSize != null) $pSkipSize = $dataHelper->convertDataInt($skipSize);
 
@@ -190,8 +192,8 @@ class doorDao{
         $pDoorNode = 'null';
 
         if ($doorId != null) $pDoorId = $dataHelper->convertDataString($doorId);
-        if ($doorName != null) $pDoorName = $dataHelper->convertDataInt($doorName);
-        if ($doorNode != null) $pDoorNode = $dataHelper->convertDataString($doorNode);
+        if ($doorName != null) $pDoorName = $dataHelper->convertDataString($doorName);
+        if ($doorNode != null) $pDoorNode = $dataHelper->convertDataInt($doorNode);
 
         $sql = "CALL update_door(" .
                 $pDoorId .

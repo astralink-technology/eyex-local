@@ -14,7 +14,7 @@ BEGIN
 
   CREATE TEMPORARY TABLE IF NOT EXISTS eventTemp AS (
     SELECT
-      event._id as event_id
+      event._id
       , event.entity_type_id
       , event.access_method
       , event.create_date

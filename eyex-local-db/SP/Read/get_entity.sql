@@ -13,7 +13,7 @@ BEGIN
 
   CREATE TEMPORARY TABLE IF NOT EXISTS entityTemp AS (
     SELECT
-      entity._id as entity_id
+      entity._id
       , entity.authentication_string
       , entity.authentication_string_lower
       , entity.first_name
@@ -25,11 +25,6 @@ BEGIN
     FROM entity
     WHERE (
       ((pEntityId IS NULL) OR (entity._id = pEntityId)) AND
-      ((pAuthenticationString IS NULL) OR (entity.authentication_string = pAuthenticationString)) AND
-      ((pAuthenticationStringLower IS NULL) OR (entity.authentication_string_lower = pAuthenticationStringLower)) AND
-      ((pFirstName IS NULL) OR (entity.first_name = pFirstName)) AND
-      ((pLastName IS NULL) OR (entity.last_name = pLastName)) AND
-      ((pName IS NULL) OR (entity.name = pName)) AND
       ((pExtension IS NULL) OR (entity.extension = pExtension)) AND
       ((pCard IS NULL) OR (entity.card = pCard)) AND
       ((pPin IS NULL) OR (entity.pin = pPin))

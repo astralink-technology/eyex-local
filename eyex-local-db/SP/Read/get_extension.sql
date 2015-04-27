@@ -11,7 +11,7 @@ BEGIN
 
   CREATE TEMPORARY TABLE IF NOT EXISTS extensionTemp AS (
     SELECT
-      extension._id as extension_id
+      extension._id
       , extension.number
       , extension.entity
     FROM event

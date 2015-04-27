@@ -11,7 +11,7 @@ BEGIN
 
   CREATE TEMPORARY TABLE IF NOT EXISTS entityDoorRelationshipTemp AS (
     SELECT
-      entity_door_relationship._id as entity_door_relationship_id
+      entity_door_relationship._id
       , entity_door_relationship.entity
       , entity_door_relationship.door
     FROM entity_door_relationship

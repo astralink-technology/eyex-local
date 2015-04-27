@@ -17,7 +17,7 @@ class entityDoorRelationshipDao{
         if ($entity != null) $pEntity = $dataHelper->convertDataString($entity);
         if ($door != null) $pDoor = $dataHelper->convertDataString($door);
 
-        $sql = "CALL add_device_door_relationship(" .
+        $sql = "CALL add_entity_door_relationship(" .
             $pEntity .
             ', ' . $pDoor .
             ")";
@@ -51,13 +51,17 @@ class entityDoorRelationshipDao{
     }
 
     public function deleteEntityDoorRelationship(
-        $entityDoorRelationshipId
+        $entityDoorRelationshipId = null
+        , $doorId = null
+        , $entityId = null
     ){
         $dataHelper = new cp_data_helper();
         $dbHelper = new cp_sqlConnection_helper();
 
         if (
             $entityDoorRelationshipId == null
+            && $doorId == null
+            && $entityId == null
         ){
             //return the json object
             $jsonObject = new stdClass();
@@ -70,11 +74,17 @@ class entityDoorRelationshipDao{
         }
 
         $pEntityDoorRelationshipId = 'null';
+        $pEntityId = 'null';
+        $pDoorId = 'null';
 
         if ($entityDoorRelationshipId != null) $pEntityDoorRelationshipId = $dataHelper->convertDataInt($entityDoorRelationshipId);
+        if ($doorId != null) $pDoorId = $dataHelper->convertDataString($doorId);
+        if ($entityId != null) $pEntityId = $dataHelper->convertDataString($entityId);
 
         $sql = "CALL delete_entity_door_relationship("
                 . $pEntityDoorRelationshipId .
+                ', ' . $pEntityId .
+                ', ' . $pDoorId .
             ")";
 
         // Perform Query
@@ -115,6 +125,8 @@ class entityDoorRelationshipDao{
         $pEntityDoorRelationshipId = 'null';
         $pEntity = 'null';
         $pDoor = 'null';
+        $pPageSize = 'null';
+        $pSkipSize = 'null';
 
         if ($entityDoorRelationshipId != null) $pEntityDoorRelationshipId = $dataHelper->convertDataInt($entityDoorRelationshipId);
         if ($door != null) $pDoor = $dataHelper->convertDataString($door);

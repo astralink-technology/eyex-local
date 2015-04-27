@@ -66,7 +66,7 @@ class deviceDao{
         return $jsonObject;
     }
 
-    public function deleteDoor(
+    public function deleteDevice(
         $deviceId
     ){
         $dataHelper = new cp_data_helper();
@@ -225,7 +225,7 @@ class deviceDao{
         if ($type != null) $pType = $dataHelper->convertDataString($type);
         if ($type2 != null) $pType2 = $dataHelper->convertDataString($type2);
         if ($intPrefix != null) $pIntPrefix = $dataHelper->convertDataInt($intPrefix);
-        if ($door != null) $pDoor = $dataHelper->convertDataString($door);
+        if ($door != null || $door == '') $pDoor = $dataHelper->convertDataString($door);
 
         $sql = "CALL update_device(" .
                 $pDeviceId .

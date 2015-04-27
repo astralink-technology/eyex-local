@@ -11,7 +11,7 @@ BEGIN
 
   CREATE TEMPORARY TABLE IF NOT EXISTS doorTemp AS (
     SELECT
-      door._id as door_id
+      door._id
       , door.door_name
       , door.door_node
     FROM door

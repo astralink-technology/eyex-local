@@ -1,5 +1,5 @@
-DROP PROCEDURE IF EXISTS delete_entity;
-CREATE PROCEDURE delete_entity(
+DROP PROCEDURE IF EXISTS delete_event;
+CREATE PROCEDURE delete_event(
   IN pEventId VARCHAR(128)
 )
 BEGIN

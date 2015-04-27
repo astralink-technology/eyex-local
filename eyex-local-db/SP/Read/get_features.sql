@@ -14,7 +14,7 @@ BEGIN
 
   CREATE TEMPORARY TABLE IF NOT EXISTS featuresTemp AS (
     SELECT
-      features._id as features_id
+      features._id
       , features.remote_door_control
       , features.local_door_control
       , features.voicemail_password

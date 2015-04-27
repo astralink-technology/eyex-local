@@ -100,11 +100,13 @@ class entityDao{
 
         $pEntityId = 'null';
 
-        if ($pEntityId != null) $pEntityId = $dataHelper->convertDataString(c);
+        if ($entityId != null) $pEntityId = $dataHelper->convertDataString($entityId);
 
         $sql = "CALL delete_entity("
                 . $pEntityId .
             ")";
+
+        echo $sql;
 
         // Perform Query
         $conString = $dbHelper->initializeConnection();
@@ -260,6 +262,7 @@ class entityDao{
                 ', ' . $pPin .
             ")";
 
+        echo $sql;
         // Perform Query
         $conString = $dbHelper->initializeConnection();
         $sqlQuery = mysql_query($sql);

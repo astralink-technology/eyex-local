@@ -14,7 +14,7 @@ BEGIN
 
   CREATE TEMPORARY TABLE IF NOT EXISTS deviceTemp AS (
     SELECT
-      device._id as device_id
+      device._id
       , device.name
       , device.type
       , device.type2
