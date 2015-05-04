@@ -1,8 +1,8 @@
 DROP PROCEDURE IF EXISTS add_features;
 CREATE PROCEDURE add_features(
   pFeaturesId VARCHAR(128)
-  , pRemoteControlDoor VARCHAR(8)
-  , pLocalControlDoor VARCHAR(8)
+  , pRemoteDoorControl VARCHAR(8)
+  , pLocalDoorControl VARCHAR(8)
   , pVoicemailPassword VARCHAR(256)
   , pVoicemailExtension VARCHAR(128)
   , pPickup VARCHAR(32)
@@ -13,7 +13,7 @@ CREATE PROCEDURE add_features(
   , pDevice VARCHAR(128)
 )
 BEGIN
-  INSERT INTO extension(
+  INSERT INTO features (
     _id
     , remote_door_control
     , local_door_control
@@ -27,8 +27,8 @@ BEGIN
     , device
   ) VALUES (
     pFeaturesId
-    , pRemoteControlDoor
-    , pLocalControlDoor
+    , pRemoteDoorControl
+    , pLocalDoorControl
     , pVoicemailPassword
     , pVoicemailExtension
     , pPickup

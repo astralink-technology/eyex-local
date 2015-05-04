@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS announcement (
+  _id VARCHAR(128) NOT NULL PRIMARY KEY
+  , message TEXT
+);

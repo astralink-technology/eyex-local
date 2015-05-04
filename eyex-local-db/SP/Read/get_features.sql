@@ -3,7 +3,6 @@ CREATE PROCEDURE get_features(
   IN pFeaturesId VARCHAR(128)
   , IN pRemoteDoorControl VARCHAR(6)
   , IN pLocalDoorControl VARCHAR(6)
-  , IN pVoicemailPassword VARCHAR(256)
   , IN pVoicemailExtension VARCHAR(128)
   , IN pDevice VARCHAR(128)
   , IN pPageSize INTEGER
@@ -30,7 +29,6 @@ BEGIN
       ((pFeaturesId IS NULL) OR (features._id = pFeaturesId)) AND
       ((pRemoteDoorControl IS NULL) OR (features.remote_door_control = pRemoteDoorControl)) AND
       ((pLocalDoorControl IS NULL) OR (features.local_door_control = pLocalDoorControl)) AND
-      ((pVoicemailPassword IS NULL) OR (features.voicemail_password = pVoicemailPassword)) AND
       ((pVoicemailExtension IS NULL) OR (features.voicemail_extension = pVoicemailExtension)) AND
       ((pDevice IS NULL) OR (features.device = pDevice))
     )

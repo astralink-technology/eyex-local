@@ -3,30 +3,27 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/helpers/sqlconnection_helper.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/helpers/data_helper.php';
 
-class extensionDao{
-    public function addExtension(
-        $extensionId
-        , $number = null
-        , $extensionPassword = null
+class cardDao{
+
+    public function addCard(
+        $cardId
+        , $cardSerial = null
         , $entity = null
     ){
         $dataHelper = new cp_data_helper();
         $dbHelper = new cp_sqlConnection_helper();
 
-        $pExtensionId = 'null';
-        $pNumber = 'null';
-        $pExtensionPassword = 'null';
+        $pCardId = 'null';
+        $pCardSerial = 'null';
         $pEntity = 'null';
 
-        if ($extensionId != null) $pExtensionId = $dataHelper->convertDataString($extensionId);
-        if ($number != null) $pNumber = $dataHelper->convertDataInt($number);
-        if ($extensionPassword != null) $pExtensionPassword = $dataHelper->convertDataString($extensionPassword);
+        if ($cardId != null) $pCardId = $dataHelper->convertDataString($cardId);
+        if ($cardSerial != null) $pCardSerial = $dataHelper->convertDataString($cardSerial);
         if ($entity != null) $pEntity = $dataHelper->convertDataString($entity);
 
-        $sql = "CALL add_extension(" .
-            $pExtensionId .
-            ', ' . $pNumber .
-            ', ' . $pExtensionPassword .
+        $sql = "CALL add_card(" .
+            $pCardId .
+            ', ' . $pCardSerial .
             ', ' . $pEntity .
             ")";
 
@@ -58,14 +55,14 @@ class extensionDao{
         return $jsonObject;
     }
 
-    public function deleteExtension(
-        $extensionId
+    public function deleteCard(
+        $cardId
     ){
         $dataHelper = new cp_data_helper();
         $dbHelper = new cp_sqlConnection_helper();
 
         if (
-            $extensionId == null
+            $cardId == null
         ){
             //return the json object
             $jsonObject = new stdClass();
@@ -77,12 +74,12 @@ class extensionDao{
             return;
         }
 
-        $pExtensionId = 'null';
+        $pCardId = 'null';
 
-        if ($extensionId != null) $pExtensionId = $dataHelper->convertDataString($extensionId);
+        if ($cardId != null) $pCardId = $dataHelper->convertDataString($cardId);
 
-        $sql = "CALL delete_extension("
-                . $pExtensionId .
+        $sql = "CALL delete_card("
+                . $pCardId .
             ")";
 
         // Perform Query
@@ -109,9 +106,9 @@ class extensionDao{
 
     }
 
-    public function getExtension(
-        $extensionId = null
-        , $number = null
+public function getCard(
+        $cardId = null
+        , $cardSerial = null
         , $entity = null
         , $pageSize = null
         , $skipSize = null
@@ -120,21 +117,21 @@ class extensionDao{
         $dataHelper = new cp_data_helper();
         $dbHelper = new cp_sqlConnection_helper();
 
-        $pExtensionId = 'null';
-        $pNumber = 'null';
+        $pCardId = 'null';
+        $pCardSerial = 'null';
         $pEntity = 'null';
         $pPageSize = 'null';
         $pSkipSize = 'null';
 
-        if ($extensionId != null) $pExtensionId = $dataHelper->convertDataString($extensionId);
-        if ($number != null) $pNumber = $dataHelper->convertDataInt($number);
+        if ($cardId != null) $pCardId = $dataHelper->convertDataString($cardId);
+        if ($cardSerial != null) $pCardSerial = $dataHelper->convertDataString($cardSerial);
         if ($entity != null) $pEntity = $dataHelper->convertDataString($entity);
         if ($pageSize != null) $pPageSize = $dataHelper->convertDataInt($pageSize);
         if ($skipSize != null) $pSkipSize = $dataHelper->convertDataInt($skipSize);
 
-        $sql = "CALL get_extension(" .
-            $pExtensionId .
-            ', ' . $pNumber .
+        $sql = "CALL get_card(" .
+            $pCardId .
+            ', ' . $pCardSerial .
             ', ' . $pEntity .
             ', ' . $pPageSize .
             ', ' . $pSkipSize .
@@ -168,10 +165,9 @@ class extensionDao{
 
     }
 
-    public function updateExtension(
-        $extensionId
-        , $number = null
-        , $extensionPassword = null
+    public function updateCard(
+        $cardId
+        , $cardSerial = null
         , $entity = null
     ){
 
@@ -179,7 +175,7 @@ class extensionDao{
         $dbHelper = new cp_sqlConnection_helper();
 
         if (
-            $extensionId == null
+            $cardId == null
         ){
             //return the json object
             $jsonObject = new stdClass();
@@ -191,20 +187,17 @@ class extensionDao{
             return;
         }
 
-        $pExtensionId = 'null';
-        $pNumber = 'null';
-        $pExtensionPassword = 'null';
+        $pCardId = 'null';
+        $pCardSerial = 'null';
         $pEntity = 'null';
 
-        if ($extensionId != null) $pExtensionId = $dataHelper->convertDataString($extensionId);
-        if ($number != null) $pNumber = $dataHelper->convertDataInt($number);
-        if ($extensionPassword != null) $pExtensionPassword = $dataHelper->convertDataString($extensionPassword);
-        if ($entity != null || $entity == '') $pEntity = $dataHelper->convertDataString($entity);
+        if ($cardId != null) $pCardId = $dataHelper->convertDataString($cardId);
+        if ($cardSerial != null) $pCardSerial = $dataHelper->convertDataString($cardSerial);
+        if ($entity != null) $pEntity = $dataHelper->convertDataString($entity);
 
-        $sql = "CALL update_extension(" .
-                $pExtensionId .
-                ', ' . $pNumber .
-                ', ' . $pExtensionPassword .
+        $sql = "CALL update_card(" .
+                $pCardId .
+                ', ' . $pCardSerial .
                 ', ' . $pEntity .
             ")";
 

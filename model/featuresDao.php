@@ -193,13 +193,6 @@ class featuresDao{
             while ($row = mysql_fetch_object($sqlQuery)) {
                 array_push($resArray, $row);
             }
-            //parse profile images
-            foreach ($resArray as $employee) {
-                $employee->profile_picture = null;
-                if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/data/' . $employee->id . '/profile-pic.jpg')){
-                    $employee->profile_picture = '../../../data/' . $employee->id . '/profile-pic.jpg';
-                }
-            }
             $resultRows = count($resArray);
             $jsonObject = new stdClass();
             $jsonObject->RowsReturned = $resultRows;
@@ -209,7 +202,6 @@ class featuresDao{
         }
         $dbHelper->dbDisconnect();
         return $jsonObject;
-
     }
 
     public function updateFeatures(

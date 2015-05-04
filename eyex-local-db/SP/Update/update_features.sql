@@ -2,8 +2,8 @@ DROP PROCEDURE IF EXISTS update_features;
 
 CREATE PROCEDURE update_features(
   IN pFeaturesId VARCHAR(128)
-  , IN pRemoteControlDoor VARCHAR(8)
-  , IN pLocalControlDoor VARCHAR(8)
+  , IN pRemoteDoorControl VARCHAR(8)
+  , IN pLocalDoorControl VARCHAR(8)
   , IN pVoicemailPassword VARCHAR(256)
   , IN pVoicemailExtension VARCHAR(128)
   , IN pPickup VARCHAR(32)
@@ -15,8 +15,8 @@ CREATE PROCEDURE update_features(
 )
 BEGIN
   /* declare the new variables */
-  DECLARE nRemoteControlDoor VARCHAR(8);
-  DECLARE nLocalControlDoor VARCHAR(8);
+  DECLARE nRemoteDoorControl VARCHAR(8);
+  DECLARE nLocalDoorControl VARCHAR(8);
   DECLARE nVoicemailPassword VARCHAR(256);
   DECLARE nVoicemailExtension VARCHAR(128);
   DECLARE nPickup VARCHAR(32);
@@ -27,8 +27,8 @@ BEGIN
   DECLARE nDevice VARCHAR(128);
 
   /* declare the old variables */
-  DECLARE oRemoteControlDoor VARCHAR(8);
-  DECLARE oLocalControlDoor VARCHAR(8);
+  DECLARE oRemoteDoorControl VARCHAR(8);
+  DECLARE oLocalDoorControl VARCHAR(8);
   DECLARE oVoicemailPassword VARCHAR(256);
   DECLARE oVoicemailExtension VARCHAR(128);
   DECLARE oPickup VARCHAR(32);
@@ -43,8 +43,8 @@ BEGIN
   IF pFeaturesId IS NOT NULL THEN
     /* get the old variables */
     SELECT
-        @oRemoteControlDoor := remote_control_door
-        , @oLocalControlDoor := local_control_door
+        @oRemoteDoorControl := remote_door_control
+        , @oLocalDoorControl := local_door_control
         , @oVoicemailPassword := voicemail_password
         , @oVoicemailExtension := voicemail_extension
         , @oPickup := pickup
@@ -59,20 +59,20 @@ BEGIN
         _id = pFeaturesId;
 
     /* set the variables with the new inputs */
-    IF pRemoteControlDoor IS NULL THEN
-        SET @nRemoteControlDoor = @oRemoteControlDoor;
-    ELSEIF pRemoteControlDoor = '' THEN
-        SET @nRemoteControlDoor = NULL;
+    IF pRemoteDoorControl IS NULL THEN
+        SET @nRemoteDoorControl = @oRemoteDoorControl;
+    ELSEIF pRemoteDoorControl = '' THEN
+        SET @nRemoteDoorControl = NULL;
     ELSE
-        SET @nRemoteControlDoor = pRemoteControlDoor;
+        SET @nRemoteDoorControl = pRemoteDoorControl;
     END IF;
     
-    IF pLocalControlDoor IS NULL THEN
-        SET @nLocalControlDoor = @oLocalControlDoor;
-    ELSEIF pLocalControlDoor = '' THEN
-        SET @nLocalControlDoor = NULL;
+    IF pLocalDoorControl IS NULL THEN
+        SET @nLocalDoorControl = @oLocalDoorControl;
+    ELSEIF pLocalDoorControl = '' THEN
+        SET @nLocalDoorControl = NULL;
     ELSE
-        SET @nLocalControlDoor = pLocalControlDoor;
+        SET @nLocalDoorControl = pLocalDoorControl;
     END IF;
     
     IF pVoicemailPassword IS NULL THEN
@@ -141,8 +141,8 @@ BEGIN
 
     UPDATE features
     SET
-        remote_control_door = @nRemoteControlDoor
-        , local_control_door = @nLocalControlDoor
+        remote_door_control = @nRemoteDoorControl
+        , local_door_control = @nLocalDoorControl
         , voicemail_password = @nVoicemailPassword
         , voicemail_extension = @nVoicemail_extension
         , pickup = @nPickup
