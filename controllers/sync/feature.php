@@ -1,6 +1,13 @@
 <?php
     require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/helpers/curl_helper.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/model/featuresDao.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/config/webConfig.php';
+
+    //app ID and token
+    $webConfig = new webconfig();
+    $webConfigObj = $webConfig->webconfig();
+    $appId = $webConfigObj->appId;
+    $token = $webConfigObj->token;
 
     //return variables
     $addCount = 0;
@@ -29,6 +36,8 @@
     //get the feature from remote
     $resGetRemoteFeatureParms = http_build_query(array(
         'DeviceId' => $deviceId
+        , 'AppId' => $appId
+        , 'Token' => $token
     ));
     $resGetRemoteFeature = $curlHelper->curlGet('/meyex/feature/getSyncFeature', $resGetRemoteFeatureParms);
     $resGetRemoteFeatureData = $resGetRemoteFeature->Data; //object, please encode it later on

@@ -106,8 +106,6 @@ class entityDao{
                 . $pEntityId .
             ")";
 
-        echo $sql;
-
         // Perform Query
         $conString = $dbHelper->initializeConnection();
         $sqlQuery = mysql_query($sql);

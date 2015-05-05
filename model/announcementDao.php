@@ -83,7 +83,6 @@ class announcementDao{
 
     public function getAnnouncement()
     {
-
         $dataHelper = new cp_data_helper();
         $dbHelper = new cp_sqlConnection_helper();
 
@@ -114,7 +113,49 @@ class announcementDao{
         }
         $dbHelper->dbDisconnect();
         return $jsonObject;
+    }
 
+    public function updateAnnouncement(
+        $message
+    ){
+
+        $dataHelper = new cp_data_helper();
+        $dbHelper = new cp_sqlConnection_helper();
+
+        $pMessage = 'null';
+
+        if ($message != null || $message == '') $pMessage = $dataHelper->convertDataString($message);
+
+        $sql = "CALL update_announcement(" .
+            $pMessage .
+            ")";
+
+        // Perform Query
+        $conString = $dbHelper->initializeConnection();
+        $sqlQuery = mysql_query($sql);
+
+        //error checking
+        if (mysql_errno()){
+            //return the json object
+            $jsonObject = new stdClass();
+            $jsonObject->RowsReturned = null;
+            $jsonObject->Data = false;
+            $jsonObject->Error = true;
+            $jsonObject->ErrorDesc = mysql_error();
+        }else{
+            $resArray = array();
+            while ($row = mysql_fetch_object($sqlQuery)) {
+                array_push($resArray, $row);
+            }
+            $resultRows = count($resArray);
+            $jsonObject = new stdClass();
+            $jsonObject->RowsReturned = $resultRows;
+            $jsonObject->Data = $resArray;
+            $jsonObject->Error = false;
+            $jsonObject->ErrorDesc = null;
+        }
+        $dbHelper->dbDisconnect();
+        return $jsonObject;
     }
 }
 ?>

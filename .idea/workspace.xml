@@ -2,26 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57a2ae2d-5e44-48fa-bcc9-559bf09e04ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Create/add_announcement.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Create/add_card.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/announcementDao.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/sync/card.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/cardDao.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-local-db/Tables/create_announcement_table.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-local-db/Tables/create_card_table.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_announcement.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_card.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/sync/extension.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/sync/feature.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Read/get_announcement.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Read/get_card.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Update/update_card.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyex-local-db/SP/Create/add_features.sql" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Create/add_features.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/extensionDao.php" afterPath="$PROJECT_DIR$/model/extensionDao.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/featuresDao.php" afterPath="$PROJECT_DIR$/model/featuresDao.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyex-local-db/SP/Read/get_extension.sql" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Read/get_extension.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyex-local-db/SP/Read/get_features.sql" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Read/get_features.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyex-local-db/SP/Update/update_features.sql" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Update/update_features.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/sync/announcement.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Update/update_announcement.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/announcementDao.php" afterPath="$PROJECT_DIR$/model/announcementDao.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/sync/card.php" afterPath="$PROJECT_DIR$/controllers/sync/card.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/sync/device.php" afterPath="$PROJECT_DIR$/controllers/sync/device.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/sync/door.php" afterPath="$PROJECT_DIR$/controllers/sync/door.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/sync/entity.php" afterPath="$PROJECT_DIR$/controllers/sync/entity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/entityDao.php" afterPath="$PROJECT_DIR$/model/entityDao.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/sync/extension.php" afterPath="$PROJECT_DIR$/controllers/sync/extension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/sync/feature.php" afterPath="$PROJECT_DIR$/controllers/sync/feature.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/webConfig.php" afterPath="$PROJECT_DIR$/config/webConfig.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eyex-local.iws" />
@@ -47,101 +38,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="csv_helper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helpers/csv_helper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="315">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update_card.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Update/update_card.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.6" vertical-offset="0" max-vertical-offset="900">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="announcementDao.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/announcementDao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.5" vertical-offset="615" max-vertical-offset="1890">
-              <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+            <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="2505">
+              <caret line="3" column="79" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.ini" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/version.ini">
+      <file leaf-file-name="webConfig.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/webConfig.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="889">
-              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+            <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="315">
+              <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="card.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="announcement.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/sync/announcement.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-23.125" vertical-offset="0" max-vertical-offset="1560">
+              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="39" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="card.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/sync/card.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.958333" vertical-offset="325" max-vertical-offset="2445">
-              <caret line="36" column="25" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.19075145" vertical-offset="0" max-vertical-offset="2580">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cardDao.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/cardDao.php">
+      <file leaf-file-name="device.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/sync/device.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.875" vertical-offset="0" max-vertical-offset="3570">
-              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+            <state vertical-scroll-proportion="-23.125" vertical-offset="0" max-vertical-offset="2805">
+              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="39" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_announcement_table.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eyex-local-db/Tables/create_announcement_table.sql">
+      <file leaf-file-name="door.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/sync/door.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="135">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state vertical-scroll-proportion="-25.625" vertical-offset="0" max-vertical-offset="4620">
+              <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="42" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_announcement.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Create/add_announcement.sql">
+      <file leaf-file-name="entity.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/sync/entity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5" vertical-offset="0" max-vertical-offset="315">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state vertical-scroll-proportion="-99.375" vertical-offset="0" max-vertical-offset="2985">
+              <caret line="159" column="33" selection-start-line="159" selection-start-column="33" selection-end-line="159" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delete_announcement.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_announcement.sql">
+      <file leaf-file-name="entityDao.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/entityDao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state vertical-scroll-proportion="-35.458332" vertical-offset="214" max-vertical-offset="4470">
+              <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_announcement.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Read/get_announcement.sql">
+      <file leaf-file-name="extension.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/sync/extension.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.1" vertical-offset="0" max-vertical-offset="450">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            <state vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="2610">
+              <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="39" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feature.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/sync/feature.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="3180">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -160,9 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/eyex-local-db/SP/Create/add_device_door_relationship.sql" />
-        <option value="$PROJECT_DIR$/eyex-local-db/SP/Create/add_door.sql" />
-        <option value="$PROJECT_DIR$/eyex-local-db/SP/Create/add_entity.sql" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Create/add_entity_door_relationship.sql" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Create/add_event.sql" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Create/add_extension.sql" />
@@ -180,23 +168,16 @@
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Read/get_event.sql" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Update/update_entity.sql" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_event.sql" />
-        <option value="$PROJECT_DIR$/model/entityDao.php" />
-        <option value="$PROJECT_DIR$/model/deviceDao.php" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Read/get_door.sql" />
         <option value="$PROJECT_DIR$/model/doorDao.php" />
         <option value="$PROJECT_DIR$/model/entityDoorRelationshipDao.php" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_entity_door_relationship.sql" />
-        <option value="$PROJECT_DIR$/controllers/sync/device.php" />
-        <option value="$PROJECT_DIR$/controllers/sync/door.php" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Read/get_features.sql" />
         <option value="$PROJECT_DIR$/model/featuresDao.php" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Update/update_extension.sql" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Update/update_features.sql" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Create/add_features.sql" />
-        <option value="$PROJECT_DIR$/controllers/sync/feature.php" />
-        <option value="$PROJECT_DIR$/controllers/sync/entity.php" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Read/get_extension.sql" />
-        <option value="$PROJECT_DIR$/controllers/sync/extension.php" />
         <option value="$PROJECT_DIR$/model/extensionDao.php" />
         <option value="$PROJECT_DIR$/eyex-local-db/Tables/create_card_table.sql" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Create/add_card.sql" />
@@ -207,10 +188,20 @@
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Create/add_announcement.sql" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Read/get_announcement.sql" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_announcement.sql" />
-        <option value="$PROJECT_DIR$/controllers/sync/card.php" />
         <option value="$PROJECT_DIR$/model/cardDao.php" />
-        <option value="$PROJECT_DIR$/model/announcementDao.php" />
+        <option value="$PROJECT_DIR$/model/deviceDao.php" />
+        <option value="$PROJECT_DIR$/eyex-local-db/SP/Update/update_announcement.sql" />
         <option value="$PROJECT_DIR$/config/version.ini" />
+        <option value="$PROJECT_DIR$/model/announcementDao.php" />
+        <option value="$PROJECT_DIR$/config/webConfig.php" />
+        <option value="$PROJECT_DIR$/controllers/sync/announcement.php" />
+        <option value="$PROJECT_DIR$/controllers/sync/device.php" />
+        <option value="$PROJECT_DIR$/controllers/sync/door.php" />
+        <option value="$PROJECT_DIR$/controllers/sync/extension.php" />
+        <option value="$PROJECT_DIR$/controllers/sync/feature.php" />
+        <option value="$PROJECT_DIR$/controllers/sync/entity.php" />
+        <option value="$PROJECT_DIR$/model/entityDao.php" />
+        <option value="$PROJECT_DIR$/controllers/sync/card.php" />
       </list>
     </option>
   </component>
@@ -297,108 +288,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local-db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local-db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Update" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local-db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Read" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local-db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Delete" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local-db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Create" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -432,11 +321,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/eyex-local-db/SP/Update" />
+      <recent name="$PROJECT_DIR$/controllers/sync" />
       <recent name="$PROJECT_DIR$/model" />
       <recent name="$PROJECT_DIR$/eyex-local-db/SP/Read" />
       <recent name="$PROJECT_DIR$/eyex-local-db/SP/Delete" />
-      <recent name="$PROJECT_DIR$/eyex-local-db/SP/Create" />
-      <recent name="$PROJECT_DIR$/eyex-local-db/Tables" />
     </key>
   </component>
   <component name="RunManager">
@@ -529,22 +418,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/eyex-local-db/Tables/create_device_table.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1" vertical-offset="0" max-vertical-offset="195">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helpers/curl_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1080">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core_d.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.958333" vertical-offset="4189" max-vertical-offset="5445">
@@ -641,14 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/entityDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.76" vertical-offset="1287" max-vertical-offset="4500">
-          <caret line="105" column="30" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Create/add_entity_door_relationship.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="315">
@@ -673,34 +538,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/deviceDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375" vertical-offset="1395" max-vertical-offset="4095">
-          <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/entityDoorRelationshipDao.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-23.875" vertical-offset="492" max-vertical-offset="3645">
           <caret line="71" column="42" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/sync/device.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4166665" vertical-offset="1550" max-vertical-offset="2670">
-          <caret line="112" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="172" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/webConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="240">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -739,14 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/sync/door.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375" vertical-offset="720" max-vertical-offset="4485">
-          <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Create/add_features.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.3" vertical-offset="0" max-vertical-offset="705">
@@ -775,14 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-25.416666" vertical-offset="3770" max-vertical-offset="4635">
           <caret line="292" column="41" selection-start-line="292" selection-start-column="41" selection-end-line="292" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/sync/entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="2850">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -823,22 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="360">
           <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/sync/extension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.083334" vertical-offset="280" max-vertical-offset="2475">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/sync/feature.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="3045">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -899,22 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Update/update_card.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6" vertical-offset="0" max-vertical-offset="900">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/sync/card.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.958333" vertical-offset="325" max-vertical-offset="2445">
-          <caret line="36" column="25" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/cardDao.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.875" vertical-offset="0" max-vertical-offset="3570">
@@ -923,10 +716,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/announcementDao.php">
+    <entry file="file://$PROJECT_DIR$/model/deviceDao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.5" vertical-offset="615" max-vertical-offset="1890">
-          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+        <state vertical-scroll-proportion="-17.291666" vertical-offset="2780" max-vertical-offset="4095">
+          <caret line="213" column="9" selection-start-line="213" selection-start-column="9" selection-end-line="213" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Update/update_card.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.22" vertical-offset="29" max-vertical-offset="900">
+          <caret line="36" column="38" selection-start-line="30" selection-start-column="47" selection-end-line="38" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -935,6 +736,96 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="889">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Update/update_announcement.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.3" vertical-offset="0" max-vertical-offset="585">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <marker date="1430817518000" expanded="true" signature="-1:-1" placeholder="UPDATE annou..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/announcementDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="2505">
+          <caret line="3" column="79" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="315">
+          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/sync/door.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.625" vertical-offset="0" max-vertical-offset="4620">
+          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="42" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/sync/extension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="2610">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="39" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/sync/feature.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="3180">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/sync/device.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.125" vertical-offset="0" max-vertical-offset="2805">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="39" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/entityDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-35.458332" vertical-offset="214" max-vertical-offset="4470">
+          <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/sync/entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-99.375" vertical-offset="0" max-vertical-offset="2985">
+          <caret line="159" column="33" selection-start-line="159" selection-start-column="33" selection-end-line="159" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/sync/announcement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.125" vertical-offset="0" max-vertical-offset="1560">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="39" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/sync/card.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19075145" vertical-offset="0" max-vertical-offset="2580">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding />
         </state>
       </provider>

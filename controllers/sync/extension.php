@@ -1,6 +1,13 @@
 <?php
     require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/helpers/curl_helper.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/model/extensionDao.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/config/webConfig.php';
+
+    //app ID and token
+    $webConfig = new webconfig();
+    $webConfigObj = $webConfig->webconfig();
+    $appId = $webConfigObj->appId;
+    $token = $webConfigObj->token;
 
     //return variables
     $addCount = 0;
@@ -29,6 +36,8 @@
     //get the extensions from remote
     $getRemoteExtensionParms = http_build_query(array(
         'DeviceId' => $deviceId
+        , 'AppId' => $appId
+        , 'Token' => $token
     ));
     $resGetRemoteExtension = $curlHelper->curlGet('/meyex/extension/getSyncExtension', $getRemoteExtensionParms);
     $resGetRemoteExtensionData = $resGetRemoteExtension->Data; //object, please encode it later on

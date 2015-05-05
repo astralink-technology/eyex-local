@@ -2,6 +2,13 @@
     require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/helpers/curl_helper.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/model/doorDao.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/model/entityDoorRelationshipDao.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/config/webConfig.php';
+
+    //app ID and token
+    $webConfig = new webconfig();
+    $webConfigObj = $webConfig->webconfig();
+    $appId = $webConfigObj->appId;
+    $token = $webConfigObj->token;
 
     //return variables
     $addDoorCount = 0;
@@ -32,6 +39,8 @@
     //get the doors from remote
     $getRemoteDoorParms = http_build_query(array(
         'DeviceId' => $deviceId
+        , 'AppId' => $appId
+        , 'Token' => $token
     ));
     $resGetRemoteDoor = $curlHelper->curlGet('/meyex/door/getSyncDoor', $getRemoteDoorParms);
     $resGetRemoteDoorData = $resGetRemoteDoor->Data; //object, please encode it later on
