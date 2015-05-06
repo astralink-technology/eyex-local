@@ -1,6 +1,6 @@
 DROP PROCEDURE IF EXISTS get_event;
 CREATE PROCEDURE get_event(
-  IN pEventId VARCHAR(128)
+  IN pEventId INTEGER
   , IN pEventTypeId VARCHAR(6)
   , IN pAccessMethod VARCHAR(6)
   , IN pDoor VARCHAR(128)
@@ -15,21 +15,21 @@ BEGIN
   CREATE TEMPORARY TABLE IF NOT EXISTS eventTemp AS (
     SELECT
       event._id
-      , event.entity_type_id
+      , event.event_type_id
       , event.access_method
       , event.create_date
       , event.door
       , event.device
       , event.entity
+      , event.door_name
     FROM event
     WHERE (
       ((pEventId IS NULL) OR (event._id = pEventId)) AND
-      ((pEntityTypeId IS NULL) OR (event.entity_type_id = pEntityTypeId)) AND
+      ((pEventTypeId IS NULL) OR (event.event_type_id = pEventTypeId)) AND
       ((pAccessMethod IS NULL) OR (event.access_method = pAccessMethod)) AND
       ((pDoor IS NULL) OR (event.door = pDoor)) AND
       ((pDevice IS NULL) OR (event.device = pDevice)) AND
-      ((pEntity IS NULL) OR (event.entity = pEntity)) AND
-      ((pDoor IS NULL) OR (entity_door_relationship.door = pDoor))
+      ((pEntity IS NULL) OR (event.entity = pEntity))
     )
   );
 

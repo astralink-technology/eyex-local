@@ -24,7 +24,7 @@ BEGIN
 
   SELECT
     COUNT(*)
-    INTO
+  INTO
     @pTotalRows
   FROM
     doorTemp;

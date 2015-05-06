@@ -3,12 +3,14 @@
     require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/model/doorDao.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/model/deviceDao.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/model/entityDoorRelationshipDao.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/model/eventDao.php';
 
     //check if the
     $entityDb = new entityDao();
     $doorDb = new doorDao();
     $deviceDb = new deviceDao();
     $entityDoorRelationshipDb = new entityDoorRelationshipDao();
+    $eventDb = new eventDao();
 
     $deviceId = null;
     $pinNo = null;
@@ -20,10 +22,12 @@
     if (isset($_GET["Card"])) $cardId = $_GET["Card"];
     if (isset($_GET["Pin"])) $pinNo = $_GET["Pin"];
     if (isset($_GET["VsAccessType"])) $vsAccessType = $_GET["VsAccessType"];
+    if (isset($_GET["DateTime"])) $dateTime = $_GET["DateTime"];
 
     //Required Parameters
     if (
         $deviceId == null ||
+        $dateTime == null ||
         ($pinNo == null && $cardId == null)
     ){
         //return the json object
@@ -31,7 +35,7 @@
         $jsonObject->RowsReturned = null;
         $jsonObject->Data = false;
         $jsonObject->Error = true;
-        $jsonObject->ErrorDesc = 'Device ID, either PIN or Card ID Required';
+        $jsonObject->ErrorDesc = 'Device ID, DateTime and either PIN or Card ID Required';
         echo json_encode($jsonObject);
         return;
     }
@@ -48,8 +52,12 @@
     if ($resCheckDeviceType->RowsReturned > 0){
         $deviceType = $resCheckDeviceType->Data[0]->type;
         $devicePrefix = $resCheckDeviceType->Data[0]->int_prefix;
+        $devicePurpose = $resCheckDeviceType->Data[0]->type2;
         if ($deviceType == 'PCR'){
             $dualAuthentication = true; //dual access
+        }
+        if ($vsAccessType != null){
+            $devicePurpose = $vsAccessType;
         }
     }else{
         //return the json object
@@ -87,6 +95,7 @@
     $returnObject->name = null;
     $returnObject->deviceId = $deviceId; //Device Id
     $returnObject->devicePrefix = $devicePrefix; //Device Prefix
+    $returnObject->devicePurpose = $devicePurpose; //Device Purpose
     $returnObject->doorNode = $doorNode;
     $returnObject->doorName = $doorName;
     $returnObject->dualAuthentication = $dualAuthentication; //singular or dual access. 1 or 2
@@ -106,6 +115,8 @@
                 //get the doors users are able to authenticate
                 $resGetEntityDoorRelationship = $entityDoorRelationshipDb->getEntityDoorRelationship(null, $entityId, $doorId);
                 if ($resGetEntityDoorRelationship->RowsReturned > 0){
+                    //insert into events
+                    $eventDb->addEvent($devicePurpose, 'P', $dateTime, $doorId, $deviceId, $entityId, $doorName);
                     $returnObject->authentication = true;
                 }
             }else{
@@ -127,6 +138,8 @@
                 //get the doors users are able to authenticate
                 $resGetEntityDoorRelationship = $entityDoorRelationshipDb->getEntityDoorRelationship(null, $entityId, $doorId);
                 if ($resGetEntityDoorRelationship->RowsReturned > 0){
+                    //insert into events
+                    $eventDb->addEvent($devicePurpose, 'C', $dateTime, $doorId, $deviceId, $entityId, $doorName);
                     $returnObject->authentication = true;
                 }
             }else{
@@ -150,6 +163,8 @@
                 //get the doors users are able to authenticate
                 $resGetEntityDoorRelationship = $entityDoorRelationshipDb->getEntityDoorRelationship(null, $entityId, $doorId);
                 if ($resGetEntityDoorRelationship->RowsReturned > 0){
+                    //insert into events
+                    $eventDb->addEvent($devicePurpose, 'PC', $dateTime, $doorId, $deviceId, $entityId, $doorName);
                     $returnObject->authentication = true;
                 }
             }else{
@@ -163,5 +178,5 @@
         }
     }
     echo json_encode($returnObject);
-
+    return;
 ?>

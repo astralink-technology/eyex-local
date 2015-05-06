@@ -5,40 +5,41 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/helpers/data_helper.php';
 
 class eventDao{
     public function addEvent(
-        $eventId
-        , $eventTypeId = null
+        $eventTypeId = null
         , $accessMethod = null
         , $createDate = null
         , $door = null
         , $device = null
         , $entity = null
+        , $doorName = null
     ){
         $dataHelper = new cp_data_helper();
         $dbHelper = new cp_sqlConnection_helper();
 
-        $pEventId = 'null';
         $pEventTypeId = 'null';
         $pAccessMethod = 'null';
         $pCreateDate = 'null';
         $pDoor = 'null';
         $pDevice = 'null';
         $pEntity = 'null';
+        $pDoorName = 'null';
 
-        if ($eventId != null) $pEventId = $dataHelper->convertDataString($eventId);
+        if ($eventTypeId != null) $pEventTypeId = $dataHelper->convertDataString($eventTypeId);
         if ($accessMethod != null) $pAccessMethod = $dataHelper->convertDataString($accessMethod);
         if ($createDate != null) $pCreateDate = $dataHelper->convertDataString($createDate);
         if ($door != null) $pDoor = $dataHelper->convertDataString($door);
         if ($device != null) $pDevice = $dataHelper->convertDataString($device);
         if ($entity != null) $pEntity = $dataHelper->convertDataString($entity);
+        if ($doorName != null) $pDoorName = $dataHelper->convertDataString($doorName);
 
         $sql = "CALL add_event(" .
-            $pEventId .
-            ', ' . $pEventTypeId .
+            $pEventTypeId .
             ', ' . $pAccessMethod .
             ', ' . $pCreateDate .
             ', ' . $pDoor .
             ', ' . $pDevice .
             ', ' . $pEntity .
+            ', ' . $pDoorName .
             ")";
 
         // Perform Query
@@ -69,32 +70,11 @@ class eventDao{
         return $jsonObject;
     }
 
-    public function deleteEvent(
-        $eventId
-    ){
+    public function deleteEvent(){
         $dataHelper = new cp_data_helper();
         $dbHelper = new cp_sqlConnection_helper();
 
-        if (
-            $eventId == null
-        ) {
-            //return the json object
-            $jsonObject = new stdClass();
-            $jsonObject->RowsReturned = null;
-            $jsonObject->Data = false;
-            $jsonObject->Error = true;
-            $jsonObject->ErrorDesc = 'Parameters Required';
-            echo json_encode($jsonObject);
-            return;
-        }
-
-        $pEventId = 'null';
-
-        if ($eventId != null) $pEventId = $dataHelper->convertDataString($eventId);
-
-        $sql = "CALL delete_event("
-            . $pEventId .
-            ")";
+        $sql = "CALL delete_event()";
 
         // Perform Query
         $conString = $dbHelper->initializeConnection();
@@ -117,7 +97,6 @@ class eventDao{
         }
         $dbHelper->dbDisconnect();
         return $jsonObject;
-
     }
 
     public function getEvent(
@@ -143,7 +122,7 @@ class eventDao{
         $pPageSize = 'null';
         $pSkipSize = 'null';
 
-        if ($eventId != null) $pEventId = $dataHelper->convertDataString($eventId);
+        if ($eventId != null) $pEventId = $dataHelper->convertDataInt($eventId);
         if ($eventTypeId != null) $pEventTypeId = $dataHelper->convertDataString($eventTypeId);
         if ($accessMethod != null) $pAccessMethod = $dataHelper->convertDataString($accessMethod);
         if ($door != null) $pDoor = $dataHelper->convertDataString($door);
@@ -152,7 +131,7 @@ class eventDao{
         if ($pageSize != null) $pPageSize = $dataHelper->convertDataInt($pageSize);
         if ($skipSize != null) $pSkipSize = $dataHelper->convertDataInt($skipSize);
 
-        $sql = "CALL getEvent(" .
+        $sql = "CALL get_event(" .
             $pEventId .
             ', ' . $pEventTypeId .
             ', ' . $pAccessMethod .
