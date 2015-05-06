@@ -193,7 +193,7 @@ class doorDao{
 
         if ($doorId != null) $pDoorId = $dataHelper->convertDataString($doorId);
         if ($doorName != null) $pDoorName = $dataHelper->convertDataString($doorName);
-        if ($doorNode != null) $pDoorNode = $dataHelper->convertDataInt($doorNode);
+        if ($doorNode != null || $doorNode == 0 ) $pDoorNode = $dataHelper->convertDataInt($doorNode);
 
         $sql = "CALL update_door(" .
                 $pDoorId .

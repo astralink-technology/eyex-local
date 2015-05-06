@@ -17,7 +17,7 @@ class cp_data_helper{
         return  '"' . (string) $data . '"';
     }
     public function convertDataInt($data){
-        if ($data == ''){
+        if ($data === ''){
             return '""';
         }else{
             return (int) $data;

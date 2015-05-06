@@ -57,7 +57,7 @@
         $remoteEntityAuthenticationString = $remoteEntity->related_entity->authentication_string;
         $remoteEntityAuthenticationStringLower = $remoteEntity->related_entity->authentication_string_lower;
         $remoteEntityPin = $remoteEntity->related_entity->pin;
-        $remoteEntityCard = $remoteEntity->related_entity->card->_id;
+        $remoteEntityCard = $remoteEntity->related_entity->card;
         $remoteEntityExtension = $remoteEntity->related_entity->extension->_id;
 
         //local variables

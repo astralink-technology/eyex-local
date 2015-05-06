@@ -37,7 +37,7 @@ BEGIN
     
     IF pDoorNode IS NULL THEN
         SET @nDoorNode = @oDoorNode;
-    ELSEIF pDoorNode = '' THEN
+    ELSEIF pDoorNode = '' AND pDoorNode != 0 THEN
         SET @nDoorNode = NULL;
     ELSE
         SET @nDoorNode = pDoorNode;
