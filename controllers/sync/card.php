@@ -1,5 +1,6 @@
 <?php
     require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/helpers/curl_helper.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/helpers/eyex_helper.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/model/cardDao.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/config/webConfig.php';
 
@@ -16,9 +17,10 @@
 
     //instantiate helpers
     $curlHelper = new cp_curl_helper();
+    $eyexHelper = new cp_eyex_helper();
 
     // Get the device ID for now
-     $deviceId = '90a783017007';
+    $deviceId = $eyexHelper->getDeviceId();
 
     if (
         $deviceId == null

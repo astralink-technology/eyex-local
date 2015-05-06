@@ -56,6 +56,26 @@ class cp_eyex_helper{
         }
     }
 
+    public function getDeviceId(){
+
+        $webConfig = new webconfig();
+        $webConfigObj = $webConfig->webconfig();
+        $production = $webConfigObj->production;
+
+        $iniHelper = new cp_ini_helper();
+
+        $dir = $_SERVER['DOCUMENT_ROOT'] . '/eyex-local/config/deviceId.ini';
+        $deviceId = null;
+        if ($production == true){
+            $dir = $_SERVER['DOCUMENT_ROOT'] . '/data/deviceId.ini';
+        }
+
+        $iniObject = $iniHelper->read_ini($dir);
+        $deviceId = $iniObject['device_id'];
+
+        return $deviceId;
+    }
+
     public function clockInOut($deviceId, $userId){
         /*
          * I = Clock In
@@ -694,7 +714,6 @@ class cp_eyex_helper{
             return 'UP TO DATE v' . $currentVersion;
         }
     }
-
 
     public function getExternalIp(){
             $externalContent = file_get_contents('http://checkip.dyndns.com/');
