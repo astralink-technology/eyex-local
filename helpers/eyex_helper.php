@@ -349,7 +349,7 @@ class cp_eyex_helper{
             $dir = $_SERVER['DOCUMENT_ROOT'] . '/data/version.ini';
             if (!file_exists($dir)) {
                 $versioniniFile = fopen($dir, "w");
-                $dbVersionText = "db_version = 1.0";
+                $dbVersionText = "db_version = 0.1";
                 fwrite($versioniniFile, $dbVersionText);
                 fclose($versioniniFile);
             }
