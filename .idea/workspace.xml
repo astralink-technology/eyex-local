@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="57a2ae2d-5e44-48fa-bcc9-559bf09e04ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/sync/announcement.php" afterPath="$PROJECT_DIR$/controllers/sync/announcement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helpers/sqlconnection_helper.php" afterPath="$PROJECT_DIR$/helpers/sqlconnection_helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eyex-local.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,18 +30,8 @@
       <file leaf-file-name="announcement.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/sync/announcement.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.2916665" vertical-offset="725" max-vertical-offset="1590">
-              <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="entity.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/sync/entity.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="3015">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="22" selection-end-column="43" />
+            <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="1590">
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -52,10 +40,11 @@
       <file leaf-file-name="eyex_helper.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/helpers/eyex_helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6635838" vertical-offset="1031" max-vertical-offset="7335">
-              <caret line="348" column="67" selection-start-line="348" selection-start-column="67" selection-end-line="348" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.5063584" vertical-offset="177" max-vertical-offset="6930">
+              <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
               <folding>
                 <element signature="e#6#91#0#PHP" expanded="true" />
+                <element signature="n#checkInstallerExists#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
                 <element signature="n#clockInOut#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
                 <element signature="n#checkFirstTimeSetup#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
                 <element signature="n#deviceBroadcast#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
@@ -80,8 +69,18 @@
       <file leaf-file-name="doorAccess.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/doorAccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="2805">
-              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="2805">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="card.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/sync/card.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.625" vertical-offset="15" max-vertical-offset="2610">
+              <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -339,7 +338,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="eyex-local-db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eyex-local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eyex-local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eyex-local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eyex-local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sync" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -781,14 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/sync/card.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="2610">
-          <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/sync/entity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="3015">
@@ -801,14 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09375" vertical-offset="0" max-vertical-offset="640">
           <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/doorAccess.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.0" vertical-offset="0" max-vertical-offset="2805">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -845,14 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/sync/announcement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2916665" vertical-offset="725" max-vertical-offset="1590">
-          <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helpers/sync_helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5820">
@@ -869,12 +880,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/doorAccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="2805">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/sync/card.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625" vertical-offset="15" max-vertical-offset="2610">
+          <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/sync/announcement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="1590">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/helpers/eyex_helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6635838" vertical-offset="1031" max-vertical-offset="7335">
-          <caret line="348" column="67" selection-start-line="348" selection-start-column="67" selection-end-line="348" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.5063584" vertical-offset="177" max-vertical-offset="6930">
+          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
           <folding>
             <element signature="e#6#91#0#PHP" expanded="true" />
+            <element signature="n#checkInstallerExists#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
             <element signature="n#clockInOut#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
             <element signature="n#checkFirstTimeSetup#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
             <element signature="n#deviceBroadcast#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />

@@ -20,7 +20,7 @@
     $eyexHelper = new cp_eyex_helper();
 
     // Get the device ID for now
-     $deviceId = eyex;
+     $deviceId = $eyexHelper->getDeviceId();
 
     if (
         $deviceId == null
