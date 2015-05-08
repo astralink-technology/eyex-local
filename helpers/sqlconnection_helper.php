@@ -14,8 +14,8 @@ class cp_sqlConnection_helper{
 
     private $prodHost = "localhost";
     private $prodDb = "eyex";
-    private $prodUser = "root";
-    private $prodPassword = "admin";
+    private $prodUser = "cety";
+    private $prodPassword = "astralink";
 
     private $host = "localhost";
     private $db = "eyex";
