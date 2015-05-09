@@ -8,7 +8,7 @@ CREATE PROCEDURE add_phone(
   , IN pEntity VARCHAR(128)
 )
 BEGIN
-  INSERT INTO announcement(
+  INSERT INTO phone(
     _id
     , phone_digits
     , country_code
@@ -21,7 +21,7 @@ BEGIN
     , pCountryCode
     , pCode
     , pType
-    , pEntityId
+    , pEntity
   );
 
   SELECT LAST_INSERT_ID();

@@ -92,7 +92,7 @@ class phoneDao{
         if ($phoneId != null) $pPhoneId = $dataHelper->convertDataString($phoneId);
 
         $sql = "CALL delete_phone("
-                . $phoneId .
+                . $pPhoneId .
             ")";
 
         // Perform Query

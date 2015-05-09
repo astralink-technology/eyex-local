@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57a2ae2d-5e44-48fa-bcc9-559bf09e04ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Create/add_phone.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-local-db/Tables/create_phone_table.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_phone.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Read/get_phone.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/phoneDao.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Update/update_phone.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/version.ini" afterPath="$PROJECT_DIR$/config/version.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/sync/phone.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyex-local-db/SP/Create/add_phone.sql" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Create/add_phone.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_phone.sql" afterPath="$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_phone.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deviceId.ini" afterPath="$PROJECT_DIR$/config/deviceId.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/phoneDao.php" afterPath="$PROJECT_DIR$/model/phoneDao.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/webConfig.php" afterPath="$PROJECT_DIR$/config/webConfig.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -35,35 +33,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="eyex_helper.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helpers/eyex_helper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.75" vertical-offset="2097" max-vertical-offset="6930">
-              <caret line="441" column="25" selection-start-line="441" selection-start-column="25" selection-end-line="441" selection-end-column="25" />
-              <folding>
-                <element signature="e#6#91#0#PHP" expanded="true" />
-                <element signature="n#checkInstallerExists#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
-                <element signature="n#clockInOut#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
-                <element signature="n#checkFirstTimeSetup#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
-                <element signature="n#deviceBroadcast#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
-                <element signature="n#rs485Broadcast#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
-                <element signature="n#rebootDeviceBroadcast#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
-                <element signature="n#doorSystemOverride#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
-                <element signature="n#enablePusher#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
-                <element signature="n#updateStatus#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
-                <element signature="n#updateUserStatus#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
-                <element signature="n#getExternalIp#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
-                <element signature="n#execShellCommand#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
-                <element signature="n#reloadAsteriskConf#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
-                <marker date="1430905908000" expanded="true" signature="6209:6288" placeholder="SELECT COUNT..user_name..." />
-                <marker date="1430905908000" expanded="true" signature="6683:6751" placeholder="SELECT COUNT..device..." />
-                <marker date="1430905908000" expanded="true" signature="7163:7231" placeholder="SELECT COUNT..device..." />
-                <marker date="1430905908000" expanded="true" signature="10488:10539" placeholder="UPDATE user_..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="create_phone_table.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eyex-local-db/Tables/create_phone_table.sql">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,8 +46,8 @@
       <file leaf-file-name="add_phone.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Create/add_phone.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.3" vertical-offset="0" max-vertical-offset="495">
-              <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="7" selection-end-column="26" />
+            <state vertical-scroll-proportion="-6.9" vertical-offset="0" max-vertical-offset="495">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -87,8 +56,18 @@
       <file leaf-file-name="delete_phone.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_phone.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7" vertical-offset="0" max-vertical-offset="255">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state vertical-scroll-proportion="-3.3" vertical-offset="0" max-vertical-offset="255">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete_features.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_features.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="255">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,8 +76,8 @@
       <file leaf-file-name="get_phone.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Read/get_phone.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="915">
-              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            <state vertical-scroll-proportion="-6.9" vertical-offset="0" max-vertical-offset="915">
+              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -114,41 +93,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="phoneDao.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/phoneDao.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.25" vertical-offset="2964" max-vertical-offset="4005">
-              <caret line="230" column="16" selection-start-line="230" selection-start-column="16" selection-end-line="230" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="version.ini" pinned="false" current-in-tab="true">
+      <file leaf-file-name="version.ini" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/version.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webConfig.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/webConfig.php">
+      <file leaf-file-name="deviceId.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/deviceId.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="315">
-              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+              <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delete_door.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_door.sql">
+      <file leaf-file-name="phone.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/sync/phone.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3" vertical-offset="0" max-vertical-offset="255">
-              <caret line="11" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="4" />
+            <state vertical-scroll-proportion="-4.26" vertical-offset="2037" max-vertical-offset="2820">
+              <caret line="150" column="51" selection-start-line="150" selection-start-column="51" selection-end-line="150" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="phoneDao.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model/phoneDao.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.548048" vertical-offset="1045" max-vertical-offset="4005">
+              <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -167,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/model/featuresDao.php" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Update/update_extension.sql" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Update/update_features.sql" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Create/add_features.sql" />
@@ -206,18 +184,19 @@
         <option value="$PROJECT_DIR$/controllers/sync/events.php" />
         <option value="$PROJECT_DIR$/controllers/sync/extension.php" />
         <option value="$PROJECT_DIR$/controllers/sync/feature.php" />
-        <option value="$PROJECT_DIR$/config/deviceId.ini" />
         <option value="$PROJECT_DIR$/helpers/eyex_helper.php" />
         <option value="$PROJECT_DIR$/helpers/sqlconnection_helper.php" />
         <option value="$PROJECT_DIR$/controllers/sync/announcement.php" />
-        <option value="$PROJECT_DIR$/eyex-local-db/SP/Create/add_phone.sql" />
-        <option value="$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_phone.sql" />
         <option value="$PROJECT_DIR$/eyex-local-db/Tables/create_phone_table.sql" />
-        <option value="$PROJECT_DIR$/model/phoneDao.php" />
-        <option value="$PROJECT_DIR$/config/webConfig.php" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Read/get_phone.sql" />
         <option value="$PROJECT_DIR$/eyex-local-db/SP/Update/update_phone.sql" />
+        <option value="$PROJECT_DIR$/config/webConfig.php" />
+        <option value="$PROJECT_DIR$/config/deviceId.ini" />
+        <option value="$PROJECT_DIR$/controllers/sync/phone.php" />
+        <option value="$PROJECT_DIR$/eyex-local-db/SP/Create/add_phone.sql" />
         <option value="$PROJECT_DIR$/config/version.ini" />
+        <option value="$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_phone.sql" />
+        <option value="$PROJECT_DIR$/model/phoneDao.php" />
       </list>
     </option>
   </component>
@@ -452,38 +431,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sync" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eyex-local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -499,11 +446,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/controllers/sync" />
       <recent name="$PROJECT_DIR$/model" />
       <recent name="$PROJECT_DIR$/eyex-local-db/SP/Update" />
       <recent name="$PROJECT_DIR$/eyex-local-db/SP/Read" />
       <recent name="$PROJECT_DIR$/eyex-local-db/SP/Delete" />
-      <recent name="$PROJECT_DIR$/eyex-local-db/SP/Create" />
     </key>
   </component>
   <component name="RunManager">
@@ -596,22 +543,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Update/update_entity.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1151" max-vertical-offset="2040">
-          <caret line="82" column="35" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eyex-local-db/Tables/create_announcement_table.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="135">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_announcement.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
@@ -880,14 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/deviceId.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helpers/sync_helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5820">
@@ -947,10 +870,10 @@
             <element signature="n#getExternalIp#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
             <element signature="n#execShellCommand#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
             <element signature="n#reloadAsteriskConf#0;n#cp_eyex_helper#0;n#!!top" expanded="false" />
-            <marker date="1430905908000" expanded="true" signature="6209:6288" placeholder="SELECT COUNT..user_name..." />
-            <marker date="1430905908000" expanded="true" signature="6683:6751" placeholder="SELECT COUNT..device..." />
-            <marker date="1430905908000" expanded="true" signature="7163:7231" placeholder="SELECT COUNT..device..." />
-            <marker date="1430905908000" expanded="true" signature="10488:10539" placeholder="UPDATE user_..." />
+            <marker date="1430905908000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..user_name..." />
+            <marker date="1430905908000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..device..." />
+            <marker date="1430905908000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..device..." />
+            <marker date="1430905908000" expanded="true" signature="-1:-1" placeholder="UPDATE user_..." />
           </folding>
         </state>
       </provider>
@@ -963,50 +886,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_phone.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7" vertical-offset="0" max-vertical-offset="255">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eyex-local-db/Tables/create_phone_table.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="195">
-          <caret line="6" column="23" selection-start-line="0" selection-start-column="34" selection-end-line="6" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Create/add_phone.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3" vertical-offset="0" max-vertical-offset="495">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="7" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/phoneDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.25" vertical-offset="2964" max-vertical-offset="4005">
-          <caret line="230" column="16" selection-start-line="230" selection-start-column="16" selection-end-line="230" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/webConfig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="315">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Read/get_phone.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="915">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="405">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1019,10 +902,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/eyex-local-db/Tables/create_phone_table.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="195">
+          <caret line="6" column="23" selection-start-line="0" selection-start-column="34" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/deviceId.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Read/get_phone.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.9" vertical-offset="0" max-vertical-offset="915">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/version.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_features.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Create/add_phone.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.9" vertical-offset="0" max-vertical-offset="495">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eyex-local-db/SP/Delete/delete_phone.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3" vertical-offset="0" max-vertical-offset="255">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/sync/phone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.26" vertical-offset="2037" max-vertical-offset="2820">
+          <caret line="150" column="51" selection-start-line="150" selection-start-column="51" selection-end-line="150" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/phoneDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.548048" vertical-offset="1045" max-vertical-offset="4005">
+          <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
           <folding />
         </state>
       </provider>

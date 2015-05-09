@@ -2,9 +2,15 @@
     class webconfig{
         public function webconfig(){
             $webConfigObj = new stdClass();
+
+            //production / development mode
             $webConfigObj->production = false;
+
+            //cloud server configuration
             $webConfigObj->cloudServer = 'http://www.eyexcess.com';
-//            $webConfigObj->cloudServer = 'http://localhost:4000';
+            if ($webConfigObj->production == false){
+                $webConfigObj->cloudServer = 'http://localhost:4000';
+            }
 
             //Astralink AppID and Token
             $webConfigObj->appId = 'C81R582S-WKKYXTBA-LG4CI8AI';
