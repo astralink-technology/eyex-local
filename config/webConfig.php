@@ -4,7 +4,7 @@
             $webConfigObj = new stdClass();
 
             //production / development mode
-            $webConfigObj->production = false;
+            $webConfigObj->production = true;
 
             //cloud server configuration
             $webConfigObj->cloudServer = 'http://www.eyexcess.com';
