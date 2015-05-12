@@ -1,6 +1,8 @@
 DROP PROCEDURE IF EXISTS get_sip;
 CREATE PROCEDURE get_sip(
   IN pSipId VARCHAR(128)
+  , IN pPageSize INTEGER
+  , IN pSkipSize INTEGER
 )
 BEGIN
   DECLARE pTotalRows INTEGER;

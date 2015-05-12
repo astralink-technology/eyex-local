@@ -111,19 +111,27 @@ class sipDao{
 
     }
 
-    public function getPhone(
+    public function getSip(
         $sipId = null
+        , $pageSize = null
+        , $skipSize = null
     ){
 
         $dataHelper = new cp_data_helper();
         $dbHelper = new cp_sqlConnection_helper();
 
         $pSipId = 'null';
+        $pPageSize = 'null';
+        $pSkipSize = 'null';
 
         if ($sipId != null) $pSipId = $dataHelper->convertDataString($sipId);
+        if ($pageSize != null) $pPageSize = $dataHelper->convertDataInt($pageSize);
+        if ($skipSize != null) $pSkipSize = $dataHelper->convertDataInt($skipSize);
 
         $sql = "CALL get_sip(" .
-            $pSip .
+            $pSipId .
+            ',' . $pPageSize .
+            ',' . $pSkipSize .
             ")";
 
         $conString = $dbHelper->initializeConnection();

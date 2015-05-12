@@ -45,7 +45,7 @@
     $resGetRemoteAnnouncement = $curlHelper->curlGet('/meyex/message/getSyncAnnouncement', $getRemoteAnnouncementParms);
     $resGetRemoteAnnouncementData = $resGetRemoteAnnouncement->Data; //object, please encode it later on
 
-    //get the card from local
+    //get the announcement from local
     $announcementDb = new announcementDao();
     $resGetLocalAnnouncement = $announcementDb->getAnnouncement();
     $resGetLocalAnnouncementData = $resGetLocalAnnouncement->Data; //object, please encode it later on
